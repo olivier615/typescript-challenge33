@@ -7,6 +7,9 @@
  * 輸出: 'Alice: 85%'
  */
 
-export function printStudentInfo(student) {
+let stu: [string, number] = ['Alice', 85]
+
+export function printStudentInfo(student: stu) {
     // 在此實現函式
+    return `${student[0]}: ${student[1]}%`
 }

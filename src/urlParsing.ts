@@ -20,4 +20,11 @@ interface UrlParts {
 
 export function parseUrl(url: string): UrlParts {
    // 請在此處寫下你的程式碼
+  const urlObject = new URL(url);
+
+  return {
+    protocol: urlObject.protocol,
+    hostname: urlObject.hostname,
+    path: urlObject.pathname, // 包含斜線
+  };
 }
